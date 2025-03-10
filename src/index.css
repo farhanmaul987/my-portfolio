@@ -48,16 +48,16 @@
     @apply h-[3px] w-[79px] rounded-sm bg-gray-400;
   }
   .socmed {
-    @apply flex size-9 items-center justify-center rounded-full bg-bgSocmed text-prLavender transition duration-100 hover:text-white;
+    @apply flex size-9 items-center justify-center rounded-full bg-bgSocmed text-prLavender transition duration-100 hover:text-white md:size-11 lg:size-9;
   }
   .iconSocmed {
-    @apply size-6;
+    @apply size-6 md:size-8 lg:size-6;
   }
   .contactMe {
     @apply rounded-md border border-prLavender px-2 py-2 text-prLavender transition duration-100 hover:border-white hover:text-white;
   }
   .downloadCV {
-    @apply w-[165px] justify-center rounded-md border border-prLavender bg-prLavender px-3 py-2 font-semibold transition duration-100 hover:bg-cvHover hover:text-white;
+    @apply w-[165px] justify-center rounded-md border border-prLavender bg-prLavender px-3 py-2 font-semibold transition duration-100 hover:bg-cvHover hover:text-white md:w-[190px] md:px-5 md:py-3 md:text-lg lg:w-[165px] lg:px-3 lg:py-2 lg:text-base;
   }
   .moreAboutMe {
     @apply w-[165px] rounded-md border border-white px-3 py-2 font-semibold text-white transition duration-100 hover:border-prLavender hover:text-prLavender;
@@ -89,18 +89,97 @@
   /* End Tools and Skills */
 
   /* Project */
-  .project-box {
-    @apply mx-4 h-[390px] w-[300px] justify-center rounded-lg bg-ProjectCard p-7 hover:shadow-lg hover:shadow-prLavender;
-  }
-  .project.container {
-    @apply flex flex-col items-center space-x-3;
-  }
-  .detailButton {
-    @apply w-[165px] rounded-md border border-prLavender bg-prLavender px-3 py-3 font-semibold transition duration-100 hover:bg-cvHover hover:text-white;
-  }
+  /* Title Text */
   .text-outline {
+    @apply absolute left-[-80px] w-full text-[150px] font-semibold;
     color: transparent;
     -webkit-text-stroke: 1px #99999933;
   }
+  /* End Title Text */
+
+  /* Project Box */
+  .project-box {
+    @apply mx-4 h-[311px] w-[250px] justify-center rounded-xl bg-transparent;
+  }
+  .project-container {
+    @apply flex h-full w-full items-center space-x-3 text-center transition-transform duration-[0.7s];
+    transform-style: preserve-3d;
+  }
+  .project-box:hover .project-container {
+    transform: rotateY(180deg);
+  }
+  .project-box-front,
+  .project-box-back {
+    @apply absolute flex h-full w-full flex-col rounded-xl border-2 border-srLavender shadow-[0_8px_14px_0px_rgba(0,0,0,0.2)];
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  /* Project Box Front */
+  .project-box-front {
+    @apply relative flex flex-col items-center justify-center overflow-hidden rounded-xl bg-sldGrey text-white;
+  }
+  .project-title {
+    @apply relative flex items-center justify-center text-3xl font-bold;
+  }
+  .project-title-content {
+    @apply relative shadow-black drop-shadow-md after:absolute after:bottom-[-4px] after:left-1/2 after:h-[3px] after:w-[50%] after:-translate-x-1/2 after:bg-white;
+  }
+  .project-description {
+    @apply relative flex items-center justify-center px-4 text-lg shadow-black drop-shadow-md;
+  }
+  /* End Project Box Front */
+
+  /* Project Box Back */
+  .project-box-back {
+    @apply flex flex-col justify-between bg-sldGrey px-7 py-10 text-white;
+    transform: rotateY(180deg);
+  }
+  .project-btn {
+    @apply relative inline-block cursor-pointer border-0 bg-transparent p-0 align-middle no-underline outline-none;
+  }
+  .btn-content {
+    @apply h-auto w-48;
+  }
+  .btn-circle {
+    @apply relative m-0 block h-12 w-12 rounded-[1.625rem] bg-prLavender transition-all duration-[0.45s] ease-[cubic-bezier(0.65,0,0.076,1)];
+  }
+  .btn-icon {
+    @apply absolute inset-y-0 m-auto bg-white transition-all duration-[0.45s] ease-[cubic-bezier(0.65,0,0.076,1)];
+  }
+  .btn-arrow {
+    @apply left-2.5 h-0.5 w-[1.125rem] bg-transparent transition-all duration-[0.45s] ease-[cubic-bezier(0.65,0,0.076,1)] before:absolute before:right-px before:top-[-0.29rem] before:h-2.5 before:w-2.5 before:rotate-45 before:border-r-2 before:border-t-2 before:border-solid before:border-r-white before:border-t-white before:content-[""];
+  }
+  .btn-text {
+    @apply absolute inset-0 my-0 ml-[1.85rem] mr-0 px-0 py-3 text-center font-bold uppercase leading-[1.6] text-white transition-all duration-[0.45s] ease-[cubic-bezier(0.65,0,0.076,1)];
+  }
+  .project-btn:hover .btn-circle {
+    @apply w-full;
+  }
+  .project-btn:hover .btn-arrow {
+    @apply translate-x-1 translate-y-0;
+  }
+  /* End Project Box Back */
+
+  /* Project Box More */
+  .project-box-more {
+    @apply mx-4 h-[311px] w-[250px] justify-center rounded-xl bg-transparent;
+  }
+  .project-container-more {
+    @apply h-full w-full items-center text-center;
+  }
+  .project-more {
+    @apply flex h-full w-full flex-col items-center justify-between rounded-xl border-2 border-srLavender bg-sldGrey px-7 py-10 text-white shadow-[0_8px_14px_0px_rgba(0,0,0,0.2)];
+  }
+  /* End Project Box More */
   /* End Project */
+
+  /* Contact Person */
+  .contact-icon-box {
+    @apply flex size-10 items-center justify-center rounded-full border border-white text-white transition duration-100 hover:border-prLavender hover:text-prLavender;
+  }
+  .contact-icon {
+    @apply size-6;
+  }
+  /* End Contact Person */
 }

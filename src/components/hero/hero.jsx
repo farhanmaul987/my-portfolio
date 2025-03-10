@@ -13,23 +13,23 @@ import {
 function Hero() {
   return (
     <section id="hero">
-      <div className="flex flex-row px-16">
+      <div className="flex flex-col px-6 md:px-12 lg:flex-row lg:px-16">
         {/* Flex Left */}
-        <div className="w-1/2">
+        <div className="w-full lg:w-1/2">
           <div className="flex w-full flex-col">
             {/* Intro */}
             <div className="h-[35%] pt-36">
-              <h2 className="heading-2 text-white">Hi!</h2>
-              <h1 className="heading-1 text-white">
+              <h2 className="heading-3 md:heading-2 text-white">Hi!</h2>
+              <h1 className="heading-2 md:heading-1 text-white">
                 I am <span className="text-prLavender">Farhan Maulana</span>
               </h1>
-              <p className="pt-1 text-gray-300">
+              <p className="pt-1 text-gray-300 md:text-xl lg:text-base">
                 Web Developer | Discord Bot Developer
               </p>
             </div>
             <div className="h-[45%] pt-6">
               <div className="line-1 mt-1"></div>
-              <p className="mt-3 text-justify text-gray-300">
+              <p className="mt-3 text-justify text-gray-300 md:text-lg lg:text-base">
                 Bachelor of Informatics from Universitas Pembangunan Nasional
                 &quot;Veteran&quot; Jawa Timur who has a strong interest in Web
                 Development and Discord Bot Development. I am an individual with
@@ -41,18 +41,22 @@ function Hero() {
 
             {/* Button */}
             <div className="h-[20%] pt-9">
-              <div className="left-0 flex h-fit flex-row text-center items-center">
+              <div className="left-0 flex h-fit flex-row items-center text-center">
                 <a
                   href="https://drive.google.com/file/d/1u-HucAID5WDx-BTMOmOmGrbRutY7zsYj/view?usp=sharing"
                   target="_blank"
                   className="downloadCV mr-4 flex"
                 >
-                  <img src={fileFill} alt="file-icon" className="mr-2 invert" />
+                  <img
+                    src={fileFill}
+                    alt="file-icon"
+                    className="mr-2 scale-125 invert lg:scale-100"
+                  />
                   Download CV
                 </a>
-                <a href="#" className="moreAboutMe">
+                {/* <a href="#" className="moreAboutMe">
                   More
-                </a>
+                </a> */}
               </div>
             </div>
             {/* End Button */}
@@ -61,17 +65,19 @@ function Hero() {
         {/* End Flex Left */}
 
         {/* Flex Right */}
-        <div className="flex w-1/2">
+        <div className="flex w-full lg:w-1/2">
           <div className="flex w-full flex-col">
             {/* Photo */}
-            <div className="h-[90%] pl-44 pt-28">
+            <div className="flex h-[90%] justify-center pt-14 md:scale-125 md:pt-20 lg:scale-100 lg:pl-44 lg:pt-28">
               <img src={myPhoto} alt="my-photo" />
             </div>
             {/* End Photo */}
 
             {/* Social Media */}
-            <div className="flex items-center space-x-3 pl-52 pt-8">
-              <h6 className="heading-6">Find Me On</h6>
+            <div className="flex items-center justify-center space-x-3 pt-6 md:pt-20 lg:pl-52">
+              <h6 className="lg:heading-6 text-sm font-semibold md:text-lg">
+                Find Me On
+              </h6>
               <a href="https://github.com/farhanmaul987" target="_blank">
                 <div className="socmed">
                   <RiGithubFill className="iconSocmed" />

@@ -1,6 +1,6 @@
 function Status() {
   return (
-    <section className="relative flex h-[300px] items-center justify-center mt-20">
+    <section className="relative flex h-[300px] items-center justify-center">
       {/* Background */}
       <div className="absolute inset-0 bg-bgStatus bg-cover bg-center opacity-15 mix-blend-plus-darker"></div>
 

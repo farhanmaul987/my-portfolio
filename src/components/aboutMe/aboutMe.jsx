@@ -2,8 +2,8 @@ import CustomSlider from "./customSlider";
 
 function AboutMe() {
   return (
-    <section id="aboutMe">
-      <div className=" max-w-full px-16 pt-16">
+    <section id="aboutMe" className="mt-16">
+      <div className="max-w-full px-16">
         {/* Text */}
         <h6 className="heading-6 text-center italic text-prGrey">
           What Do I Offer

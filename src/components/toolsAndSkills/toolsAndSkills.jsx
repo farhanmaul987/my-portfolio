@@ -4,9 +4,13 @@ import skillData from "./skillList";
 
 function ToolsAndSkills() {
   return (
-    <>
+    <section className="mt-16">
+      {/* Status */}
       <Status />
-      <section id="#" className="mt-16 px-14">
+      {/* End Status */}
+
+      {/* Skills and Tools */}
+      <section className="mt-16 px-14">
         <div className="relative">
           <h3 className="heading-3 text-center">My Skills and Tools</h3>
           <h5 className="heading-5 pt-2 text-center italic text-prGrey">
@@ -30,7 +34,8 @@ function ToolsAndSkills() {
           </Marquee>
         </div>
       </section>
-    </>
+      {/* End Skills and Tools */}
+    </section>
   );
 }
 

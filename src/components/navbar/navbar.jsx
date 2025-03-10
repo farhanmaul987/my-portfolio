@@ -25,13 +25,13 @@ function Navbar() {
                 Project
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#" className="hover:text-prLavender">
                 Blog
               </a>
-            </li>
+            </li> */}
             <li>
-              <a href="#" className="contactMe">
+              <a href="#contactPerson" className="contactMe">
                 Contact Me
               </a>
             </li>
