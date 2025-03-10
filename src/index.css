@@ -6,23 +6,15 @@
 
 :root {
   font-family: Poppins;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-
-  --bg-gradient: linear-gradient(to bottom, #0c0c0c, #040017);
-  background: var(--bg-gradient);
-
+  background: #04000a;
   --bg-navigation: #ffffff;
 }
 
-* {
+/* * {
   cursor: none !important;
-  user-select: none;
-  -webkit-user-drag: none;
-  -moz-user-drag: none;
-  -ms-user-drag: none;
-}
+} */
 
 /* No Scrollbar */
 ::-webkit-scrollbar {
@@ -49,57 +41,66 @@
   .heading-6 {
     @apply text-[18px] font-semibold;
   }
+  /* End Headings */
 
-  /* Shapes */
+  /* Hero */
   .line-1 {
-    @apply w-[79px] h-[3px] bg-gray-400 rounded-sm;
+    @apply h-[3px] w-[79px] rounded-sm bg-gray-400;
   }
   .socmed {
-    @apply size-9 flex items-center justify-center rounded-full bg-bgSocmed text-prLavender hover:text-white transition duration-100;
+    @apply flex size-9 items-center justify-center rounded-full bg-bgSocmed text-prLavender transition duration-100 hover:text-white;
   }
   .iconSocmed {
     @apply size-6;
   }
-
-  /* Buttons */
   .contactMe {
-    @apply px-2 py-2 border border-prLavender rounded-md text-prLavender hover:text-white hover:border-white transition duration-100;
+    @apply rounded-md border border-prLavender px-2 py-2 text-prLavender transition duration-100 hover:border-white hover:text-white;
   }
   .downloadCV {
-    @apply px-3 py-2 w-[165px] rounded-md font-semibold border border-prLavender bg-prLavender hover:bg-cvHover hover:text-white transition duration-100;
+    @apply w-[165px] justify-center rounded-md border border-prLavender bg-prLavender px-3 py-2 font-semibold transition duration-100 hover:bg-cvHover hover:text-white;
   }
   .moreAboutMe {
-    @apply px-3 py-2 w-[165px] border rounded-md font-semibold border-white text-white hover:border-prLavender hover:text-prLavender transition duration-100;
+    @apply w-[165px] rounded-md border border-white px-3 py-2 font-semibold text-white transition duration-100 hover:border-prLavender hover:text-prLavender;
   }
+  /* End Hero */
 
   /* Slider */
   .slide-box {
-    @apply relative flex space-x-9 overflow-hidden rounded-xl bg-slGrey h-[390px] w-[940px] items-center justify-center;
+    @apply relative flex h-[390px] w-[940px] items-center justify-center space-x-9 overflow-hidden rounded-xl bg-sldGrey;
   }
   .slide-container {
-    @apply bg-slcontainer p-8 border items-center justify-center rounded-xl font-semibold transition-all;
+    @apply items-center justify-center rounded-xl border bg-sldcontainer p-8 font-semibold transition-all;
   }
+  /* End Slider */
 
   /* Status */
   .status-box {
-    @apply bg-srBlack opacity-90 rounded-md border-2 border-dashed border-white p-4 h-52 w-60 flex flex-col space-y-2 justify-center items-center hover:border-prLavender hover:bg-prLavender hover:text-white transition duration-100;
+    @apply flex h-52 w-60 flex-col items-center justify-center space-y-2 rounded-md border-2 border-dashed border-white bg-srBlack p-4 opacity-90 transition duration-100 hover:border-prLavender hover:bg-prLavender hover:text-white;
   }
+  /* End Status */
+
+  /* Tools and Skills */
+  .skill-icon {
+    @apply mx-7 flex flex-col items-center text-center;
+  }
+  .skill-text {
+    @apply mt-3 text-xl font-semibold;
+  }
+  /* End Tools and Skills */
 
   /* Project */
   .project-box {
-    @apply flex flex-col mt-8 p-7 justify-center rounded-lg bg-slGrey h-[160px] w-[1020px];
+    @apply mx-4 h-[390px] w-[300px] justify-center rounded-lg bg-ProjectCard p-7 hover:shadow-lg hover:shadow-prLavender;
   }
-  .project-container {
-    @apply flex flex-row space-x-3 items-center;
+  .project.container {
+    @apply flex flex-col items-center space-x-3;
   }
   .detailButton {
-    @apply px-3 py-3 w-[165px] rounded-md font-semibold border border-prLavender bg-prLavender hover:bg-cvHover hover:text-white transition duration-100;
+    @apply w-[165px] rounded-md border border-prLavender bg-prLavender px-3 py-3 font-semibold transition duration-100 hover:bg-cvHover hover:text-white;
   }
-}
-
-@layer utilities {
   .text-outline {
     color: transparent;
     -webkit-text-stroke: 1px #99999933;
   }
+  /* End Project */
 }

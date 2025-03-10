@@ -17,7 +17,7 @@ export default function CustomCursor() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 pointer-events-none size-5 bg-prLavender rounded-full mix-blend-difference z-[999]"
+      className="pointer-events-none fixed left-0 top-0 z-[999] size-5 rounded-full bg-prLavender mix-blend-difference"
       animate={{ x: position.x - 12, y: position.y - 12 }}
       transition={{ type: "tween", ease: "linear", duration: 0.01 }}
     />

@@ -19,11 +19,12 @@ export default {
         srGrey: "#999999",
         cvHover: "#5739E1",
         bgSocmed: "#161225",
-        slGrey: "#111112",
-        slcontainer: "#1B172A",
+        sldGrey: "#111112",
+        sldcontainer: "#1B172A",
         pettyTitle: "#33F3FE",
         siperuTitle: "#D5A016",
         ruangBelajarTitle: "#5FCF80",
+        ProjectCard: "#212121"
       },
 
       fontFamily: {

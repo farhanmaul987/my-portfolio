@@ -1,23 +1,23 @@
-import Navbar from "./navbar/navbar.jsx";
-import Hero from "./hero/hero.jsx";
-import AboutMe from "./aboutMe/aboutMe.jsx";
-import Project from "./project/project.jsx";
-import HireMe from "./hireMe/hireMe.jsx";
-import ToolsAndSkills from "./toolsAndSkills/toolsAndSkills.jsx";
-import ContactPerson from "./contactPerson/contactPerson.jsx";
+import Navbar from "./navbar/navbar";
+import Hero from "./hero/hero";
+import AboutMe from "./aboutMe/aboutMe";
+import ToolsAndSkills from "./toolsAndSkills/toolsAndSkills";
+import Project from "./project/project";
+import HireMe from "./hireMe/hireMe";
+import ContactPerson from "./contactPerson/contactPerson";
 
-import CustomCursor from "./customCursor.jsx";
+// import CustomCursor from "./customCursor.jsx";
 
 function App() {
   return (
     <div>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
       <Hero />
       <AboutMe />
-      <Project />
-      <HireMe />
       <ToolsAndSkills />
+      <Project /> 
+      <HireMe />
       <ContactPerson />
     </div>
   );

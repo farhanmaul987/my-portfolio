@@ -13,23 +13,23 @@ import {
 function Hero() {
   return (
     <section id="hero">
-      <div className=" container mx-auto max-w-full px-16 flex flex-row w-full">
+      <div className="flex flex-row px-16">
         {/* Flex Left */}
         <div className="w-1/2">
-          <div className="flex flex-col w-full">
+          <div className="flex w-full flex-col">
             {/* Intro */}
             <div className="h-[35%] pt-36">
               <h2 className="heading-2 text-white">Hi!</h2>
               <h1 className="heading-1 text-white">
                 I am <span className="text-prLavender">Farhan Maulana</span>
               </h1>
-              <p className="text-gray-300 pt-1">
+              <p className="pt-1 text-gray-300">
                 Web Developer | Discord Bot Developer
               </p>
             </div>
             <div className="h-[45%] pt-6">
               <div className="line-1 mt-1"></div>
-              <p className="text-gray-300 text-justify mt-3">
+              <p className="mt-3 text-justify text-gray-300">
                 Bachelor of Informatics from Universitas Pembangunan Nasional
                 &quot;Veteran&quot; Jawa Timur who has a strong interest in Web
                 Development and Discord Bot Development. I am an individual with
@@ -41,7 +41,7 @@ function Hero() {
 
             {/* Button */}
             <div className="h-[20%] pt-9">
-              <div className=" left-0 flex flex-row h-fit text-center">
+              <div className="left-0 flex h-fit flex-row text-center items-center">
                 <a
                   href="https://drive.google.com/file/d/1u-HucAID5WDx-BTMOmOmGrbRutY7zsYj/view?usp=sharing"
                   target="_blank"
@@ -62,15 +62,15 @@ function Hero() {
 
         {/* Flex Right */}
         <div className="flex w-1/2">
-          <div className="flex flex-col w-full">
+          <div className="flex w-full flex-col">
             {/* Photo */}
-            <div className="h-[90%] pt-28 pl-44">
+            <div className="h-[90%] pl-44 pt-28">
               <img src={myPhoto} alt="my-photo" />
             </div>
             {/* End Photo */}
 
             {/* Social Media */}
-            <div className="items-center flex pl-52 pt-8 space-x-3">
+            <div className="flex items-center space-x-3 pl-52 pt-8">
               <h6 className="heading-6">Find Me On</h6>
               <a href="https://github.com/farhanmaul987" target="_blank">
                 <div className="socmed">

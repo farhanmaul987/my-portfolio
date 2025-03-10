@@ -17,7 +17,7 @@ export default function CustomSlider() {
   };
 
   return (
-    <div className="flex flex-col items-center space-y-3 p-6 ">
+    <div className="flex flex-col items-center space-y-3 p-6">
       <div className="slide-box">
         {/* Slider Container */}
         {slides.map((slide, index) => (
@@ -25,24 +25,24 @@ export default function CustomSlider() {
             key={slide.id}
             className={`slide-container duration-300 ${
               index === current
-                ? "scale-110 shadow-lg border-prLavender"
-                : "opacity-50 blur-[1px] border-none grayscale"
+                ? "scale-110 border-prLavender shadow-lg"
+                : "border-none opacity-50 blur-[1px] grayscale"
             }`}
             initial={{ opacity: 0 }}
             animate={{ opacity: index === current ? 1 : 0.5 }}
             onMouseEnter={() => setCurrent(index)}
           >
             <img src={slide.img} alt={slide.title} className="size-48" />
-            <p className="text-center text-white mt-5">{slide.title}</p>
+            <p className="mt-5 text-center text-white">{slide.title}</p>
           </motion.div>
         ))}
         {/* End Slider Container */}
       </div>
 
-      <div className="flex space-x-2 items-center mt-4">
+      <div className="mt-4 flex items-center space-x-2">
         {/* Button Left */}
         <button onClick={prevSlide} className="p-2">
-          <RiArrowLeftSLine className="text-white size-8 hover:text-prLavender" />
+          <RiArrowLeftSLine className="size-8 text-white hover:text-prLavender" />
         </button>
         {/* End Button Left */}
 
@@ -61,7 +61,7 @@ export default function CustomSlider() {
 
         {/* Button Right */}
         <button onClick={nextSlide} className="p-2">
-          <RiArrowRightSLine className="text-white size-8 hover:text-prLavender" />
+          <RiArrowRightSLine className="size-8 text-white hover:text-prLavender" />
         </button>
         {/* End Button Right */}
       </div>

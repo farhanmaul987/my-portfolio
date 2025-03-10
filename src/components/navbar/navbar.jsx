@@ -1,15 +1,15 @@
 function Navbar() {
   return (
     <header>
-      <div className=" container max-w-full w-full fixed top-0 z-[998]">
+      <div className="fixed top-0 z-[998] w-full max-w-full">
         {/* <!-- Navbar --> */}
-        <nav className="px-16 bg-srBlack text-white flex justify-between items-center h-20">
+        <nav className="flex h-20 items-center justify-between bg-srBlack px-16 text-white">
           <a href="#">
             <h5 className="heading-5">
               My <span className="text-prLavender">Portofolio</span>
             </h5>
           </a>
-          <ul className="flex space-x-6 font-semibold text-[17px]">
+          <ul className="flex space-x-6 text-[17px] font-semibold">
             <li>
               <a href="#hero" className="hover:text-prLavender">
                 Home
