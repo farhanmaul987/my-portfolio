@@ -10,7 +10,7 @@ function Navbar() {
       <div className="fixed top-0 z-[998] w-full max-w-full">
         {/* Navbar */}
         <nav className="flex h-20 items-center justify-between bg-srBlack px-6 text-white md:px-12 lg:px-16">
-          <a href="#">
+          <a href="#hero">
             <h5 className="heading-5">
               My <span className="text-prLavender">Portofolio</span>
             </h5>

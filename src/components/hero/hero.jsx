@@ -13,7 +13,7 @@ import {
 function Hero() {
   return (
     <section id="hero">
-      <div className="flex flex-col px-6 md:px-12 lg:flex-row lg:pl-16 lg:pr-0">
+      <div className="flex flex-col px-6 lg:h-screen md:px-12 lg:flex-row lg:pl-16 lg:pr-0">
         {/* Flex Left */}
         <div className="w-full lg:w-1/2">
           <div className="flex w-full flex-col">
@@ -54,9 +54,9 @@ function Hero() {
                   />
                   Download CV
                 </a>
-                {/* <a href="#" className="moreAboutMe">
+                <a href="#" className="moreAboutMe">
                   More
-                </a> */}
+                </a>
               </div>
             </div>
             {/* End Button */}
@@ -68,13 +68,13 @@ function Hero() {
         <div className="flex w-full lg:w-1/2">
           <div className="flex w-full flex-col">
             {/* Photo */}
-            <div className="flex h-[90%] justify-center pt-14 md:scale-150 md:pt-32 lg:scale-100 lg:pt-28">
+            <div className="flex h-[90%] justify-center pt-14 md:scale-150 md:pt-32 lg:scale-[.85] lg:pt-28">
               <img src={myPhoto} alt="my-photo" />
             </div>
             {/* End Photo */}
 
             {/* Social Media */}
-            <div className="flex items-center justify-center space-x-3 pt-6 md:space-x-5 md:pt-40 lg:space-x-3 lg:pt-8">
+            <div className="flex items-center justify-center space-x-3 pt-6 md:space-x-5 md:pt-40 lg:space-x-3 lg:pt-0">
               <h6 className="lg:heading-6 text-xs font-semibold md:text-2xl lg:text-lg">
                 Find Me On
               </h6>
