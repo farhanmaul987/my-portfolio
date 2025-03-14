@@ -4,7 +4,7 @@ import skillData from "./skillList";
 
 function ToolsAndSkills() {
   return (
-    <section className="mt-16">
+    <section className="mt-10">
       {/* Status */}
       <Status />
       {/* End Status */}

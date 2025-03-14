@@ -5,7 +5,7 @@ import discordBot from "../../assets/slides/bot1.png";
 export const slides = [
   {
     id: 1,
-    title: "Discord Bot Development",
+    title: "Discord Bot Dev",
     img: discordBot,
   },
   {
@@ -15,7 +15,7 @@ export const slides = [
   },
   {
     id: 3,
-    title: "Custom Discord Server",
+    title: "Build Discord Server",
     img: discordServer,
   },
 ];
