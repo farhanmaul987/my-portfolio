@@ -16,10 +16,10 @@
   cursor: none !important;
 } */
 
-/* No Scrollbar */
+/* No Scrollbar
 ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 @layer components {
   /* Headings */

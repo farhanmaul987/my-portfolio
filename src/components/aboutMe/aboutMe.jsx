@@ -3,7 +3,7 @@ import CustomSlider from "./customSlider";
 function AboutMe() {
   return (
     <section id="aboutMe">
-      <div className="px-6 pt-28 md:px-16">
+      <div className="px-6 pt-24 md:px-16">
         {/* Text */}
         <h6 className="heading-6 text-center italic text-prGrey">
           What Do I Offer
