@@ -13,7 +13,7 @@ import {
 function Hero() {
   return (
     <section id="hero">
-      <div className="flex flex-col px-6 lg:h-screen md:px-12 lg:flex-row lg:pl-16 lg:pr-0">
+      <div className="flex flex-col px-6 md:px-12 lg:flex-row lg:pl-16 lg:pr-0">
         {/* Flex Left */}
         <div className="w-full lg:w-1/2">
           <div className="flex w-full flex-col">
@@ -54,9 +54,9 @@ function Hero() {
                   />
                   Download CV
                 </a>
-                <a href="#" className="moreAboutMe">
+                {/* <a href="#" className="moreAboutMe">
                   More
-                </a>
+                </a> */}
               </div>
             </div>
             {/* End Button */}
