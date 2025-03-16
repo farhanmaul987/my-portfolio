@@ -13,12 +13,12 @@ import {
 function Hero() {
   return (
     <section id="hero">
-      <div className="flex flex-col px-6 md:px-12 lg:flex-row lg:pl-16 lg:pr-0">
+      <div className="flex flex-col px-6 md:px-12 lg:h-screen lg:flex-row lg:pl-16 lg:pr-0">
         {/* Flex Left */}
         <div className="w-full lg:w-1/2">
           <div className="flex w-full flex-col">
             {/* Intro */}
-            <div className="h-[35%] pt-24 md:pt-28 lg:pt-36">
+            <div className="h-[35%] pt-24 md:pt-28 lg:pt-32">
               <h2 className="heading-3 md:heading-2 text-white">Hi!</h2>
               <h1 className="heading-2 md:heading-1 text-white">
                 I am <span className="text-prLavender">Farhan Maulana</span>
@@ -41,7 +41,7 @@ function Hero() {
 
             {/* Button */}
             <div className="h-[20%] pt-9">
-              <div className="left-0 flex h-fit flex-row items-center text-center">
+              <div className="left-0 flex h-fit flex-col space-y-5 text-center md:flex-row md:items-center md:space-y-0">
                 <a
                   href="https://drive.google.com/file/d/1u-HucAID5WDx-BTMOmOmGrbRutY7zsYj/view?usp=sharing"
                   target="_blank"
@@ -54,9 +54,9 @@ function Hero() {
                   />
                   Download CV
                 </a>
-                {/* <a href="#" className="moreAboutMe">
+                <a href="#" className="moreAboutMe">
                   More
-                </a> */}
+                </a>
               </div>
             </div>
             {/* End Button */}
@@ -65,44 +65,48 @@ function Hero() {
         {/* End Flex Left */}
 
         {/* Flex Right */}
-        <div className="flex w-full lg:w-1/2">
-          <div className="flex w-full flex-col">
-            {/* Photo */}
-            <div className="flex h-[90%] justify-center pt-14 md:scale-150 md:pt-32 lg:scale-[.85] lg:pt-28">
-              <img src={myPhoto} alt="my-photo" />
-            </div>
-            {/* End Photo */}
+        <div className="flex w-full flex-col items-center justify-center lg:w-1/2">
+          {/* Photo */}
+          <div className="pt-14 md:pt-20 lg:pt-2">
+            <img
+              src={myPhoto}
+              alt="Farhan Maulana's Photo"
+              className="h-auto w-56 rounded-lg shadow-lg md:w-[520px] lg:w-96"
+            />
+          </div>
 
-            {/* Social Media */}
-            <div className="flex items-center justify-center space-x-3 pt-6 md:space-x-5 md:pt-40 lg:space-x-3 lg:pt-0">
-              <h6 className="lg:heading-6 text-xs font-semibold md:text-2xl lg:text-lg">
-                Find Me On
-              </h6>
-              <a href="https://github.com/farhanmaul987" target="_blank">
-                <div className="socmed">
-                  <RiGithubFill className="iconSocmed" />
-                </div>
-              </a>
-              <a href="https://www.instagram.com/farhan.maul/" target="_blank">
-                <div className="socmed">
-                  <RiInstagramLine className="iconSocmed" />
-                </div>
-              </a>
+          {/* Social Media */}
+          <div className="flex items-center justify-center space-x-2 pt-6 md:space-x-5 md:pt-8 lg:space-x-3 lg:pt-0">
+            <h6 className="text-xs font-semibold md:text-2xl lg:text-lg">
+              Find Me On
+            </h6>
+            {[
+              {
+                href: "https://github.com/farhanmaul987",
+                icon: <RiGithubFill className="iconSocmed" />,
+              },
+              {
+                href: "https://www.instagram.com/farhan.maul/",
+                icon: <RiInstagramLine className="iconSocmed" />,
+              },
+              {
+                href: "https://www.linkedin.com/in/farhanmaul987/",
+                icon: <RiLinkedinFill className="iconSocmed" />,
+              },
+              {
+                href: "https://wa.me/6282272447647",
+                icon: <RiWhatsappLine className="iconSocmed" />,
+              },
+            ].map((item, index) => (
               <a
-                href="https://www.linkedin.com/in/farhanmaul987/"
+                key={index}
+                href={item.href}
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                <div className="socmed">
-                  <RiLinkedinFill className="iconSocmed" />
-                </div>
+                <div className="socmed">{item.icon}</div>
               </a>
-              <a href="https://wa.me/6282272447647" target="_blank">
-                <div className="socmed">
-                  <RiWhatsappLine className="iconSocmed" />
-                </div>
-              </a>
-            </div>
-            {/* End Social Media */}
+            ))}
           </div>
         </div>
         {/* End Flex Right */}

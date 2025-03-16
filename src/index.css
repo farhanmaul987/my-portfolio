@@ -48,10 +48,10 @@
     @apply h-[3px] w-[79px] rounded-sm bg-gray-400;
   }
   .socmed {
-    @apply flex size-9 items-center justify-center rounded-full bg-bgSocmed text-prLavender transition duration-100 hover:text-white md:size-16 lg:size-9;
+    @apply flex size-8 items-center justify-center rounded-full bg-bgSocmed text-prLavender transition duration-100 hover:text-white md:size-16 lg:size-9;
   }
   .iconSocmed {
-    @apply size-6 md:size-10 lg:size-6;
+    @apply size-5 md:size-10 lg:size-6;
   }
   .contactMe {
     @apply rounded-md border border-prLavender px-2 py-2 text-prLavender transition duration-100 hover:border-white hover:text-white;
@@ -60,7 +60,7 @@
     @apply w-[165px] justify-center rounded-md border border-prLavender bg-prLavender px-3 py-2 font-semibold transition duration-100 hover:bg-cvHover hover:text-white md:w-[190px] md:px-5 md:py-3 md:text-lg lg:w-[165px] lg:px-3 lg:py-2 lg:text-base;
   }
   .moreAboutMe {
-    @apply w-[165px] rounded-md border border-white px-3 py-2 font-semibold text-white transition duration-100 hover:border-prLavender hover:text-prLavender;
+    @apply w-[165px] rounded-md border border-white px-3 py-2 font-semibold text-white transition duration-100 hover:border-prLavender hover:text-prLavender md:w-[190px] md:px-5 md:py-3 md:text-lg lg:w-[165px] lg:px-3 lg:py-2 lg:text-base;
   }
   /* End Hero */
 
