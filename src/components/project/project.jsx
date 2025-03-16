@@ -5,8 +5,8 @@ function Project() {
     <section id="project">
       {/* Text */}
       <div className="pt-8">
-        <div className="text-outline">MY PROJECT</div>
-        <div className="mt-[88px] px-16">
+        <div className="md:text-outline hidden">MY PROJECT</div>
+        <div className="hidden md:mt-[88px] md:px-16">
           <div className="relative items-center justify-center text-center text-white">
             <h2 className="heading-2">Latest Project</h2>
           </div>
