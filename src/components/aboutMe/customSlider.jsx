@@ -13,6 +13,7 @@ export default function CustomSlider() {
   const [current, setCurrent] = useState(1);
 
   // For Sm
+  const [currentSm, setCurrentSm] = useState(0);
   // const [isStart, setIsStart] = useState(true);
   // const [isEnd, setIsEnd] = useState(false);
 
@@ -91,15 +92,31 @@ export default function CustomSlider() {
 
       {/* Sm Size */}
       <div className="md:hidden">
-        <Swiper spaceBetween={5} loop={false}>
-          {slides.map((slide) => (
+        <Swiper
+          spaceBetween={5}
+          loop={false}
+          onSlideChange={(swiper) => setCurrentSm(swiper.activeIndex)}
+        >
+          {slides.map((slide, index) => (
             <SwiperSlide key={slide.id}>
               <div className="mt-5 flex justify-center">
-                <div className="flex h-[220px] w-[200px] flex-col items-center rounded-lg bg-sldcontainer p-4">
-                  <img src={slide.img} alt={slide.title} className="size-38" />
-                  <p className="mt-4 text-center text-sm text-white">
-                    {slide.title}
-                  </p>
+                <div
+                  className={`flex h-[265px] w-[250px] items-center justify-center rounded-md bg-sldGrey duration-300 ${
+                    index === currentSm
+                      ? "scale-100 border-prLavender shadow-lg"
+                      : "border-none opacity-50 blur-[1px] grayscale"
+                  }`}
+                >
+                  <div className="flex h-[220px] w-[200px] flex-col items-center justify-center rounded-lg bg-sldcontainer p-4">
+                    <img
+                      src={slide.img}
+                      alt={slide.title}
+                      className="size-38"
+                    />
+                    <p className="mt-4 text-center text-sm text-white">
+                      {slide.title}
+                    </p>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>

@@ -16,7 +16,7 @@ function ToolsAndSkills() {
         setGradientWidth(200);
         setIconSize(70);
       } else {
-        setGradientWidth(0);
+        setGradientWidth(50);
         setIconSize(60);
       }
     };

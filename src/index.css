@@ -168,13 +168,13 @@
 
   /* Project Box More */
   .project-box-more {
-    @apply mx-4 h-[311px] w-[250px] justify-center rounded-xl bg-transparent;
+    @apply mx-4 h-[311px] w-[250px] justify-center bg-transparent;
   }
   .project-container-more {
-    @apply h-full w-full items-center text-center;
+    @apply h-full items-center text-center;
   }
   .project-more {
-    @apply flex h-full w-full flex-col items-center justify-between rounded-xl border-2 border-srLavender bg-sldGrey px-7 py-10 text-white shadow-[0_8px_14px_0px_rgba(0,0,0,0.2)];
+    @apply flex h-full flex-col items-center justify-between rounded-xl border-2 border-srLavender bg-sldGrey px-7 py-10 text-white shadow-[0_8px_14px_0px_rgba(0,0,0,0.2)];
   }
   /* End Project Box More */
   /* End Project */
