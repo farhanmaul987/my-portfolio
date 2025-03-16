@@ -72,7 +72,7 @@ function Project() {
         {/* End Project Box */}
 
         {/* More Projects */}
-        <div className="project-box-more">
+        {/* <div className="project-box-more">
           <div className="project-container-more">
             <div className="project-more">
               <div className="py-6 text-4xl font-bold">More Projects?</div>
@@ -88,7 +88,7 @@ function Project() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* End More Projects */}
       </div>
       {/* End Content */}

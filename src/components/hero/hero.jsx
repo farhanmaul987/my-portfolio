@@ -71,7 +71,7 @@ function Hero() {
             <img
               src={myPhoto}
               alt="Farhan Maulana's Photo"
-              className="h-auto w-56 rounded-lg shadow-lg md:w-[520px] lg:w-96"
+              className="h-auto w-60 rounded-lg shadow-lg md:w-[590px] lg:w-96"
             />
           </div>
 
