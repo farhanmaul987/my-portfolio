@@ -67,7 +67,7 @@ function Hero() {
         {/* Flex Right */}
         <div className="flex w-full flex-col items-center justify-center lg:w-1/2">
           {/* Photo */}
-          <div className="pt-14 md:pt-20 lg:pt-2">
+          <div className="pt-14 md:pt-20 lg:pt-20">
             <img
               src={myPhoto}
               alt="Farhan Maulana's Photo"
@@ -76,7 +76,7 @@ function Hero() {
           </div>
 
           {/* Social Media */}
-          <div className="flex items-center justify-center space-x-2 pt-6 md:space-x-5 md:pt-8 lg:space-x-3 lg:pt-0">
+          <div className="flex items-center justify-center space-x-2 pt-6 md:space-x-5 md:pt-8 lg:space-x-3 lg:pt-8">
             <h6 className="text-xs font-semibold md:text-2xl lg:text-lg">
               Find Me On
             </h6>

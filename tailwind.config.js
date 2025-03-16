@@ -5,7 +5,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        bgStatus: "url('/src/assets/status-bg.jpg')",
+        statusLandscape: "url('/src/assets/status-landscape.jpg')",
+        statusPortrait: "url('/src/assets/status-portrait.jpg')",
         bgPortfolio: "url('/src/assets/myportfolio.png')",
         bgPetty: "url('/src/assets/petty.png')",
         bgSiperu: "url('/src/assets/siperu.png')",

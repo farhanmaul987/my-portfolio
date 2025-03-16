@@ -11,6 +11,8 @@ export const projects = [
     projectBox: "project-box mt-[55px]",
     img: myportfolio,
     linkURL: "https://github.com/farhanmaul987/my-portfolio",
+    buttonStyle: "btn-circle bg-prLavender",
+    projectStatus: "In Progress",
     badges: [
       { text: "React Js", color: "61DAFB", logo: "react", logoColor: "white" },
       {
@@ -35,6 +37,8 @@ export const projects = [
     projectBox: "project-box",
     img: pettyImage,
     linkURL: "https://github.com/farhanmaul987/Petty",
+    buttonStyle: "btn-circle bg-green-600 ",
+    projectStatus: "Completed",
     badges: [
       {
         text: "Discord.js",
@@ -53,6 +57,8 @@ export const projects = [
     projectBox: "project-box mt-[55px]",
     img: siperuImage,
     linkURL: "https://github.com/farhanmaul987/siperu",
+    buttonStyle: "btn-circle bg-green-600 ",
+    projectStatus: "Completed",
     badges: [
       { text: "PHP", color: "777BB4", logo: "php", logoColor: "white" },
       {

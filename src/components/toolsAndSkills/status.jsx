@@ -1,21 +1,24 @@
 function Status() {
   return (
-    <section className="relative flex h-[300px] items-center justify-center">
-      {/* Background */}
-      <div className="opacity-15 mix-blend-plus-darker md:absolute md:inset-0 md:bg-bgStatus md:bg-cover md:bg-center"></div>
+    <section className="relative flex min-h-[300px] items-center justify-center">
+      {/* Background Md & Lg */}
+      <div className="md:bg-statusLandscape hidden opacity-15 mix-blend-plus-darker md:absolute md:inset-0 md:block md:bg-cover md:bg-center"></div>
+
+      {/* Background Sm */}
+      <div className="bg-statusPortrait absolute inset-0 block bg-cover bg-center opacity-15 mix-blend-plus-darker md:hidden"></div>
 
       {/* Border Container */}
-      <div className="relative z-10 flex space-x-5">
+      <div className="relative z-10 flex flex-col items-center space-y-5 md:flex-row md:space-x-5 md:space-y-0">
         <div className="status-box">
-          <h3 className="heading-3">Ongoing</h3>
+          <h3 className="heading-5 lg:heading-3">Ongoing</h3>
           <p>Web Dev Learning</p>
         </div>
         <div className="status-box">
-          <h3 className="heading-3">100+</h3>
+          <h3 className="heading-5 lg:heading-3">100+</h3>
           <p>Hours Self-Study</p>
         </div>
         <div className="status-box">
-          <h3 className="heading-3">3+</h3>
+          <h3 className="heading-5 lg:heading-3">3+</h3>
           <p>Personal Project</p>
         </div>
       </div>

@@ -81,16 +81,16 @@
 
   /* Status */
   .status-box {
-    @apply flex h-52 w-60 flex-col items-center justify-center space-y-2 rounded-md border-2 border-dashed border-white bg-srBlack p-4 opacity-90 transition duration-100 hover:border-prLavender hover:bg-prLavender hover:text-white;
+    @apply flex h-40 w-48 flex-col items-center justify-center space-y-2 rounded-md border-2 border-dashed border-white bg-srBlack p-4 opacity-90 transition duration-100 hover:border-prLavender hover:bg-prLavender hover:text-white md:h-44 md:w-52 lg:h-52 lg:w-60;
   }
   /* End Status */
 
   /* Tools and Skills */
   .skill-icon {
-    @apply mx-7 flex flex-col items-center text-center;
+    @apply mx-4 flex flex-col items-center text-center md:mx-7;
   }
   .skill-text {
-    @apply mt-3 text-xs font-semibold md:text-xl;
+    @apply mt-3 text-base font-semibold md:text-xl;
   }
   /* End Tools and Skills */
 
@@ -147,10 +147,10 @@
     @apply h-auto w-48;
   }
   .btn-circle {
-    @apply relative m-0 block h-12 w-12 rounded-[1.625rem] bg-prLavender transition-all duration-[0.45s] ease-[cubic-bezier(0.65,0,0.076,1)];
+    @apply relative m-0 block h-12 w-12 rounded-[1.625rem] transition-all duration-[0.40s] ease-[cubic-bezier(0.65,0,0.076,1)];
   }
   .btn-icon {
-    @apply absolute inset-y-0 m-auto bg-white transition-all duration-[0.45s] ease-[cubic-bezier(0.65,0,0.076,1)];
+    @apply absolute inset-y-0 m-auto bg-white transition-all duration-[0.40s] ease-[cubic-bezier(0.65,0,0.076,1)];
   }
   .btn-arrow {
     @apply left-2.5 h-0.5 w-[1.125rem] bg-transparent transition-all duration-[0.45s] ease-[cubic-bezier(0.65,0,0.076,1)] before:absolute before:right-px before:top-[-0.29rem] before:h-2.5 before:w-2.5 before:rotate-45 before:border-r-2 before:border-t-2 before:border-solid before:border-r-white before:border-t-white before:content-[""];

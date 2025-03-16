@@ -58,10 +58,10 @@ function Project() {
                 <div>
                   <a href={project.linkURL} target="_blank">
                     <button className="project-btn btn-content">
-                      <span className="btn-circle">
+                      <span className={project.buttonStyle}>
                         <span className="btn-icon btn-arrow"></span>
                       </span>
-                      <span className="btn-text">View Project</span>
+                      <span className="btn-text">{project.projectStatus}</span>
                     </button>
                   </a>
                 </div>
@@ -79,7 +79,7 @@ function Project() {
               <div>
                 <a href="https://github.com/farhanmaul987" target="_blank">
                   <button className="project-btn btn-content">
-                    <span className="btn-circle">
+                    <span className="btn-circle bg-prLavender">
                       <span className="btn-icon btn-arrow"></span>
                     </span>
                     <span className="btn-text">View Project</span>
