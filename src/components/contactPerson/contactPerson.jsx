@@ -4,14 +4,17 @@ import imgVector from "../../assets/contact-vector.png";
 
 function ContactPerson() {
   return (
-    <section id="contactPerson" className="mt-16 bg-srBlack px-16 py-11">
-      <div className="flex flex-row justify-center">
-        <div className="w-1/2">
+    <section
+      id="contactPerson"
+      className="mt-16 bg-srBlack px-6 py-11 md:px-12 lg:px-16"
+    >
+      <div className="justify-center md:flex md:flex-row">
+        <div className="md:w-1/2">
           <div className="text-3xl font-semibold">Get in Touch</div>
           <div className="my-5 text-base">
             For business and partnership inquiry please contact me below!
           </div>
-          <div className="flex flex-col space-y-3">
+          <div className="flex flex-col space-y-4">
             <div className="flex flex-row items-center space-x-3">
               <a href="https://wa.me/6282272447647" target="_blank">
                 <div className="contact-icon-box">
@@ -50,8 +53,12 @@ function ContactPerson() {
             </div>
           </div>
         </div>
-        <div className="w-1/2 pl-80">
-          <img src={imgVector} alt={imgVector} className="size-64" />
+        <div className="hidden w-1/2 items-center justify-center md:flex">
+          <img
+            src={imgVector}
+            alt={imgVector}
+            className="md:size-56 lg:size-64"
+          />
         </div>
       </div>
     </section>
