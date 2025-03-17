@@ -91,7 +91,7 @@ export default function CustomSlider() {
       </div>
 
       {/* Sm Size */}
-      <div className="md:hidden">
+      <div className="mt-5 md:hidden">
         <Swiper
           spaceBetween={5}
           loop={false}
@@ -99,7 +99,7 @@ export default function CustomSlider() {
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={slide.id}>
-              <div className="mt-5 flex justify-center">
+              <div className="flex justify-center">
                 <div
                   className={`flex h-[265px] w-[250px] items-center justify-center rounded-md bg-sldGrey duration-300 ${
                     index === currentSm
