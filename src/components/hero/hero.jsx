@@ -71,13 +71,13 @@ function Hero() {
             <img
               src={myPhoto}
               alt="Farhan Maulana's Photo"
-              className="h-auto w-60 rounded-lg shadow-lg md:w-[590px] lg:w-96"
+              className="h-auto w-72 rounded-lg shadow-lg md:w-[590px] lg:w-96"
             />
           </div>
 
           {/* Social Media */}
           <div className="flex items-center justify-center space-x-2 pt-6 md:space-x-5 md:pt-8 lg:space-x-3 lg:pt-8">
-            <h6 className="text-xs font-semibold md:text-2xl lg:text-lg">
+            <h6 className="text-sm font-semibold md:text-2xl lg:text-lg">
               Find Me On
             </h6>
             {[

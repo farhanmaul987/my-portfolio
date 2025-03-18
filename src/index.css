@@ -48,10 +48,10 @@
     @apply h-[3px] w-[79px] rounded-sm bg-gray-400;
   }
   .socmed {
-    @apply flex size-8 items-center justify-center rounded-full bg-bgSocmed text-prLavender transition duration-100 hover:text-white md:size-16 lg:size-9;
+    @apply flex size-9 items-center justify-center rounded-full bg-bgSocmed text-prLavender transition duration-100 hover:text-white md:size-16 lg:size-9;
   }
   .iconSocmed {
-    @apply size-5 md:size-10 lg:size-6;
+    @apply size-6 md:size-10 lg:size-6;
   }
   .contactMe {
     @apply rounded-md border border-prLavender px-2 py-2 text-prLavender transition duration-100 hover:border-white hover:text-white;
@@ -181,10 +181,10 @@
 
   /* Contact Person */
   .contact-icon-box {
-    @apply flex size-10 items-center justify-center rounded-full border border-white text-white transition duration-100 hover:border-prLavender hover:text-prLavender;
+    @apply flex size-8 items-center justify-center rounded-full border border-white text-white transition duration-100 hover:border-prLavender hover:text-prLavender md:size-10;
   }
   .contact-icon {
-    @apply size-6;
+    @apply size-4 md:size-6;
   }
   /* End Contact Person */
 }

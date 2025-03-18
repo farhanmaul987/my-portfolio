@@ -36,8 +36,10 @@ function ToolsAndSkills() {
       {/* Skills and Tools */}
       <section className="mt-16 px-14">
         <div className="relative">
-          <h3 className="heading-3 text-center">My Skills and Tools</h3>
-          <h5 className="heading-5 pt-2 text-center italic text-prGrey">
+          <h3 className="heading-4 md:heading-3 text-center">
+            My Skills and Tools
+          </h3>
+          <h5 className="heading-5 md:heading-5 pt-2 text-center italic text-prGrey">
             These are the technologies I used
           </h5>
         </div>
