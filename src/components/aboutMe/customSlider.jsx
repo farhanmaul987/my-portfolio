@@ -1,10 +1,16 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-import { RiArrowRightSLine, RiArrowLeftSLine } from "@remixicon/react";
+import {
+  RiArrowRightSLine,
+  RiArrowLeftSLine,
+  RiArrowRightSFill,
+  RiArrowLeftSFill,
+} from "@remixicon/react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
 
 import { slides } from "./slideList";
 
@@ -91,11 +97,17 @@ export default function CustomSlider() {
       </div>
 
       {/* Sm Size */}
-      <div className="mt-5 md:hidden">
+      <div className="relative mt-5 md:hidden">
         <Swiper
           spaceBetween={5}
           loop={false}
           onSlideChange={(swiper) => setCurrentSm(swiper.activeIndex)}
+          navigation={{
+            nextEl: ".custom-next",
+            prevEl: ".custom-prev",
+          }}
+          modules={[Navigation]}
+          className="mySwiper"
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={slide.id}>
@@ -122,8 +134,15 @@ export default function CustomSlider() {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
 
+        {/* Custom Navigation Buttons */}
+        <button className="custom-prev absolute left-0 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/20 p-2 transition hover:bg-white/40">
+          <RiArrowLeftSFill className="size-6 text-white" />
+        </button>
+        <button className="custom-next absolute right-0 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/20 p-2 transition hover:bg-white/40">
+          <RiArrowRightSFill className="size-6 text-white" />
+        </button>
+      </div>
       {/* End Sm Size */}
     </>
   );

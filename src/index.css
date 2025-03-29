@@ -104,13 +104,17 @@
 
   /* Project Box */
   .project-box {
+    @apply h-full w-full justify-center bg-transparent px-3;
+  }
+
+  .project-boxsm {
     @apply mx-4 h-[311px] w-[250px] justify-center rounded-xl bg-transparent;
   }
   .project-container {
     @apply flex h-full w-full items-center space-x-3 text-center transition-transform duration-[0.7s];
     transform-style: preserve-3d;
   }
-  .project-box:hover .project-container {
+  .project-boxsm:hover .project-container {
     transform: rotateY(180deg);
   }
   .project-box-front,
