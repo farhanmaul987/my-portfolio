@@ -6,6 +6,8 @@ import w4change from "../../assets/projects/w4c.png";
 
 import { SiGithub, SiMedium } from "@icons-pack/react-simple-icons";
 
+import { RiProgress6Line, RiCheckboxCircleFill } from "@remixicon/react";
+
 export const projectList = [
   {
     id: 1,
@@ -16,10 +18,10 @@ export const projectList = [
     titleStyle: "text-[#7456FF] heading-2",
     img: myportfolio,
     linkURL: "https://github.com/farhanmaul987/my-portfolio",
-    buttonStyle: "btn-circle bg-prLavender",
-    projectStatus: "On Progress",
-    statusColor: "text-prLavender",
-    linkIcon: <SiGithub className="" />,
+    projectStatus: "ON PROGRESS",
+    statusColor: "bg-prLavender",
+    statusIcon: RiProgress6Line,
+    linkIcon: <SiGithub />,
     badges: [
       { text: "React Js", color: "61DAFB", logo: "react", logoColor: "white" },
       {
@@ -41,9 +43,10 @@ export const projectList = [
     img: pettyImage,
     linkURL: "https://github.com/farhanmaul987/Petty",
     buttonStyle: "btn-circle bg-green-600",
-    projectStatus: "Completed",
-    statusColor: "text-green-600",
-    linkIcon: <SiGithub className="" />,
+    projectStatus: "COMPLETE",
+    statusColor: "bg-green-600",
+    statusIcon: RiCheckboxCircleFill,
+    linkIcon: <SiGithub />,
     badges: [
       {
         text: "Discord.js",
@@ -64,9 +67,10 @@ export const projectList = [
     img: siperuImage,
     linkURL: "https://github.com/farhanmaul987/siperu",
     buttonStyle: "btn-circle bg-green-600 ",
-    projectStatus: "Completed",
-    statusColor: "text-green-600",
-    linkIcon: <SiGithub className="" />,
+    projectStatus: "COMPLETE",
+    statusColor: "bg-green-600",
+    statusIcon: RiCheckboxCircleFill,
+    linkIcon: <SiGithub />,
     badges: [
       { text: "PHP", color: "777BB4", logo: "php", logoColor: "white" },
       {
@@ -100,9 +104,10 @@ export const projectList = [
     img: rbFasilkom,
     linkURL: "https://github.com/farhanmaul987/siperu",
     buttonStyle: "btn-circle bg-green-600 ",
-    projectStatus: "Completed",
-    statusColor: "text-green-600",
-    linkIcon: <SiGithub className="" />,
+    projectStatus: "COMPLETE",
+    statusColor: "bg-green-600",
+    statusIcon: RiCheckboxCircleFill,
+    linkIcon: <SiGithub />,
     badges: [
       {
         text: "CodeIgniter 3",
@@ -146,9 +151,10 @@ export const projectList = [
     linkURL:
       "https://medium.com/@farhanmaul987/ui-ux-case-study-redesign-aplikasi-waste4change-a0a47aa42ffa",
     buttonStyle: "btn-circle bg-green-600 ",
-    projectStatus: "Completed",
-    statusColor: "text-green-600",
-    linkIcon: <SiMedium className="" />,
+    projectStatus: "COMPLETE",
+    statusColor: "bg-green-600",
+    statusIcon: RiCheckboxCircleFill,
+    linkIcon: <SiMedium />,
     badges: [
       {
         text: "Figma",

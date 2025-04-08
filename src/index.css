@@ -7,7 +7,7 @@
 :root {
   font-family: Poppins;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  /* color: rgba(255, 255, 255, 0.87); */
   background: #04000a;
   --bg-navigation: #ffffff;
 }
@@ -97,53 +97,16 @@
   /* Project */
   /* Title Text */
   .text-outline {
-    @apply absolute left-[-80px] w-full text-[150px] font-semibold text-transparent;
+    @apply absolute left-[-100px] w-full text-[0px] font-semibold text-transparent sm:text-[88px] md:left-[-80px] md:text-[130px] lg:text-[150px];
     -webkit-text-stroke: 1px #99999933;
   }
   /* End Title Text */
 
   /* Project Box */
   .project-box {
-    @apply h-full w-full justify-center bg-transparent px-3;
+    @apply h-full w-full md:px-3;
   }
 
-  .project-boxsm {
-    @apply mx-4 h-[311px] w-[250px] justify-center rounded-xl bg-transparent;
-  }
-  .project-container {
-    @apply flex h-full w-full items-center space-x-3 text-center transition-transform duration-[0.7s];
-    transform-style: preserve-3d;
-  }
-  .project-boxsm:hover .project-container {
-    transform: rotateY(180deg);
-  }
-  .project-box-front,
-  .project-box-back {
-    @apply absolute flex h-full w-full flex-col rounded-xl border-2 border-srLavender shadow-[0_8px_14px_0px_rgba(0,0,0,0.2)];
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-
-  /* Project Box Front */
-  .project-box-front {
-    @apply relative flex flex-col items-center justify-center overflow-hidden rounded-xl bg-sldGrey text-white;
-  }
-  .project-title {
-    @apply relative flex items-center justify-center text-3xl font-bold;
-  }
-  .project-title-content {
-    @apply relative shadow-black drop-shadow-md after:absolute after:bottom-[-4px] after:left-1/2 after:h-[3px] after:w-[50%] after:-translate-x-1/2 after:bg-white;
-  }
-  .project-description {
-    @apply relative flex items-center justify-center px-4 text-lg shadow-black drop-shadow-md;
-  }
-  /* End Project Box Front */
-
-  /* Project Box Back */
-  .project-box-back {
-    @apply flex flex-col justify-between bg-sldGrey px-7 py-10 text-white;
-    transform: rotateY(180deg);
-  }
   .project-btn {
     @apply relative inline-block cursor-pointer border-0 bg-transparent p-0 align-middle no-underline outline-none;
   }
@@ -168,19 +131,18 @@
   .project-btn:hover .btn-arrow {
     @apply translate-x-1 translate-y-0;
   }
-  /* End Project Box Back */
 
-  /* Project Box More */
-  .project-box-more {
-    @apply mx-4 h-[311px] w-[250px] justify-center bg-transparent;
+  .custom-prev {
+    @apply absolute left-0 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/20 p-2 transition hover:bg-white/40;
   }
-  .project-container-more {
-    @apply h-full items-center text-center;
+  .custom-next {
+    @apply absolute right-0 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/20 p-2 transition hover:bg-white/40;
   }
-  .project-more {
-    @apply flex h-full flex-col items-center justify-between rounded-xl border-2 border-srLavender bg-sldGrey px-7 py-10 text-white shadow-[0_8px_14px_0px_rgba(0,0,0,0.2)];
+
+  .custom-prev.disabled,
+  .custom-next.disabled {
+    @apply bg-gray-400 opacity-60;
   }
-  /* End Project Box More */
   /* End Project */
 
   /* Contact Person */
