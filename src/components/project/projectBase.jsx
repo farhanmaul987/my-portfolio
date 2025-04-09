@@ -80,16 +80,18 @@ function ProjectBase() {
 
       {/* More Projects */}
       <div className="project-box">
-        <div className="flex h-[300px] flex-col items-center justify-center rounded-xl bg-sldGrey p-6">
-          <div className="py-6 text-4xl font-bold">More Projects?</div>
-          <a href="https://github.com/farhanmaul987" target="_blank">
-            <button className="project-btn btn-content">
-              <span className="btn-circle bg-prLavender">
-                <span className="btn-icon btn-arrow"></span>
-              </span>
-              <span className="btn-text">View Project</span>
-            </button>
-          </a>
+        <div className="">
+          <div className="flex h-[300px] flex-col items-center justify-center rounded-xl bg-sldGrey p-6">
+            <div className="py-6 text-4xl font-bold">More Projects?</div>
+            <a href="https://github.com/farhanmaul987" target="_blank">
+              <button className="project-btn btn-content">
+                <span className="btn-circle bg-prLavender">
+                  <span className="btn-icon btn-arrow"></span>
+                </span>
+                <span className="btn-text">View Project</span>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
       {/* End More Projects */}

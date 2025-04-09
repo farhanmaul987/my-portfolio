@@ -1,44 +1,21 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import { RiArrowRightSFill, RiArrowLeftSFill } from "@remixicon/react";
-import { useRef, useState } from "react";
+// import { RiArrowRightSFill, RiArrowLeftSFill } from "@remixicon/react";
+// import { useRef, useState } from "react";
 
 import "swiper/css";
 import "swiper/css/navigation";
 
 import { projectList } from "./projectList";
+import imgprj from "../../assets/swipe.jpg";
 
 function ProjectSm() {
-  const swiperRef = useRef(null);
-  const [isBeginning, setIsBeginning] = useState(true);
-  const [isEnd, setIsEnd] = useState(false);
-
-  const updateNavState = (swiper) => {
-    setIsBeginning(swiper.isBeginning);
-    setIsEnd(swiper.isEnd);
-  };
-
   return (
     <div className="relative mt-6 flex justify-center md:hidden">
-      <Swiper
-        spaceBetween={7}
-        loop={false}
-        slidesPerView={1}
-        navigation={{
-          nextEl: ".custom-next",
-          prevEl: ".custom-prev",
-        }}
-        modules={[Navigation]}
-        onSwiper={(swiper) => {
-          swiperRef.current = swiper;
-          updateNavState(swiper);
-        }}
-        onSlideChange={(swiper) => updateNavState(swiper)}
-      >
+      <Swiper spaceBetween={7} loop={false} slidesPerView={1}>
         {projectList.map((project) => (
           <SwiperSlide key={project.id}>
             <div className="h-full w-full">
-              <div className="relative mx-auto w-[85%] max-w-sm overflow-hidden rounded-xl bg-sldGrey p-4">
+              <div className="relative mx-auto w-[85%] max-w-sm overflow-hidden rounded-xl bg-sldGrey p-5">
                 <div className="flex flex-col overflow-hidden rounded-xl border-none">
                   <div className="relative items-center justify-center">
                     <img
@@ -56,11 +33,11 @@ function ProjectSm() {
                     </div>
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/50">
                       <div
-                        className={`${project.titleStyle} font-bold drop-shadow-xl`}
+                        className={`${project.titleStyle} text-2xl font-bold drop-shadow-xl`}
                       >
                         {project.title}
                       </div>
-                      <div className="text-lg font-semibold drop-shadow-xl">
+                      <div className="text-base font-semibold drop-shadow-xl">
                         {project.description}
                       </div>
                     </div>
@@ -77,7 +54,7 @@ function ProjectSm() {
                     />
                   ))}
                 </div>
-                <div className="pt-[21px] lg:hidden">
+                <div className="relative flex pt-[21px]">
                   <a
                     href={project.linkURL}
                     target="_blank"
@@ -87,26 +64,17 @@ function ProjectSm() {
                       {project.linkIcon}
                     </button>
                   </a>
+                  <img
+                    src={imgprj}
+                    alt="imgprj"
+                    className="absolute right-2 h-auto w-20"
+                  />
                 </div>
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {/* Custom Nav Buttons (with disabled logic) */}
-      <button
-        className={`custom-prev ${isBeginning ? "disabled cursor-not-allowed" : ""}`}
-        disabled={isBeginning}
-      >
-        <RiArrowLeftSFill className="size-6 text-white" />
-      </button>
-      <button
-        className={`custom-next ${isEnd ? "disabled cursor-not-allowed" : ""}`}
-        disabled={isEnd}
-      >
-        <RiArrowRightSFill className="size-6 text-white" />
-      </button>
     </div>
   );
 }
