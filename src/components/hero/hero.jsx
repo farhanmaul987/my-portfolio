@@ -43,7 +43,7 @@ function Hero() {
             <div className="h-[20%] pt-9">
               <div className="left-0 flex h-fit flex-col space-y-5 text-center md:flex-row md:items-center md:space-y-0">
                 <a
-                  href="https://drive.google.com/file/d/1u-HucAID5WDx-BTMOmOmGrbRutY7zsYj/view?usp=sharing"
+                  href="https://link.farhanmaul.my.id/cv"
                   target="_blank"
                   className="downloadCV mr-4 flex"
                 >
