@@ -9,7 +9,7 @@ function Project() {
         <div className="text-outline">MY PROJECT</div>
         <div className="mt-[13px] md:mt-[70px] md:px-16 lg:mt-[88px]">
           <div className="relative items-center justify-center text-center text-white">
-            <h2 className="heading-3 md:heading-2">Latest Project</h2>
+            <h2 className="heading-4 md:heading-2">Latest Project</h2>
           </div>
         </div>
       </div>
