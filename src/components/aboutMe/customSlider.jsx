@@ -1,16 +1,9 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-import {
-  RiArrowRightSLine,
-  RiArrowLeftSLine,
-  RiArrowRightSFill,
-  RiArrowLeftSFill,
-} from "@remixicon/react";
+import { RiArrowRightSLine, RiArrowLeftSLine } from "@remixicon/react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 import { slides } from "./slideList";
 
@@ -20,13 +13,6 @@ export default function CustomSlider() {
 
   // For Sm
   const [currentSm, setCurrentSm] = useState(0);
-  // const [isStart, setIsStart] = useState(true);
-  // const [isEnd, setIsEnd] = useState(false);
-
-  // const handleNavigation = (swiper) => {
-  //   setIsStart(swiper.isBeginning);
-  //   setIsEnd(swiper.isEnd);
-  // };
 
   // Button Next
   const nextSlide = () => {
@@ -100,13 +86,14 @@ export default function CustomSlider() {
       <div className="relative mt-5 md:hidden">
         <Swiper
           spaceBetween={5}
-          loop={false}
-          onSlideChange={(swiper) => setCurrentSm(swiper.activeIndex)}
-          navigation={{
-            nextEl: ".custom-next",
-            prevEl: ".custom-prev",
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
           }}
-          modules={[Navigation]}
+          speed={900}
+          onSlideChange={(swiper) => setCurrentSm(swiper.realIndex)}
+          modules={[Autoplay]}
           className="mySwiper"
         >
           {slides.map((slide, index) => (
@@ -135,13 +122,17 @@ export default function CustomSlider() {
           ))}
         </Swiper>
 
-        {/* Custom Navigation Buttons */}
-        <button className="custom-prev absolute left-0 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/20 p-2 transition hover:bg-white/40">
-          <RiArrowLeftSFill className="size-6 text-white" />
-        </button>
-        <button className="custom-next absolute right-0 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/20 p-2 transition hover:bg-white/40">
-          <RiArrowRightSFill className="size-6 text-white" />
-        </button>
+        {/* Manual Pagination */}
+        <div className="mt-4 flex justify-center space-x-2">
+          {slides.map((_, index) => (
+            <span
+              key={index}
+              className={`h-2 w-10 rounded-full transition-all duration-300 ${
+                index === currentSm ? "bg-prLavender" : "bg-srGrey"
+              }`}
+            ></span>
+          ))}
+        </div>
       </div>
       {/* End Sm Size */}
     </>
