@@ -110,7 +110,7 @@ function ProjectBase() {
                 <span className="btn-circle bg-prLavender">
                   <span className="btn-icon btn-arrow"></span>
                 </span>
-                <span className="btn-text">View Project</span>
+                <span className="btn-text">View Projects</span>
               </button>
               {/* End Lg Button Link */}
 
