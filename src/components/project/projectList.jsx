@@ -102,7 +102,7 @@ export const projectList = [
     titleStyle: "text-[#85DA9E] heading-4",
     projectBox: "project-box",
     img: rbFasilkom,
-    linkURL: "https://github.com/farhanmaul987/siperu",
+    linkURL: "https://github.com/aulakharisma/ruangbelajarfasilkom",
     buttonStyle: "btn-circle bg-green-600 ",
     projectStatus: "COMPLETE",
     statusColor: "bg-green-600",
