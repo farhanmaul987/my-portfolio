@@ -2,10 +2,10 @@ function Status() {
   return (
     <section className="relative flex min-h-[300px] items-center justify-center">
       {/* Background Md & Lg */}
-      <div className="hidden opacity-15 mix-blend-plus-darker md:absolute md:inset-0 md:block md:bg-statusLandscape md:bg-cover md:bg-center"></div>
+      <div className="hidden opacity-30 mix-blend-plus-darker md:absolute md:inset-0 md:block md:bg-statusLandscape md:bg-cover md:bg-center"></div>
 
       {/* Background Sm */}
-      <div className="absolute inset-0 block bg-statusPortrait bg-cover bg-center opacity-15 mix-blend-plus-darker md:hidden"></div>
+      <div className="absolute inset-0 block bg-statusPortrait bg-cover bg-center opacity-25 mix-blend-plus-darker md:hidden"></div>
 
       {/* Border Container */}
       <div className="relative z-10 flex flex-col items-center space-y-5 md:flex-row md:space-x-5 md:space-y-0">

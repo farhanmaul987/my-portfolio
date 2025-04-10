@@ -87,10 +87,10 @@
 
   /* Tools and Skills */
   .skill-icon {
-    @apply mx-4 flex flex-col items-center text-center md:mx-7;
+    @apply mx-3 flex flex-col items-center text-center md:mx-7;
   }
   .skill-text {
-    @apply mt-3 text-base font-semibold md:text-xl;
+    @apply mt-4 text-base font-semibold md:mt-3 md:text-xl;
   }
   /* End Tools and Skills */
 
