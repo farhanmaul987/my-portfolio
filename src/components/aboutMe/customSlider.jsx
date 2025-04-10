@@ -88,7 +88,7 @@ export default function CustomSlider() {
           spaceBetween={5}
           loop={true}
           autoplay={{
-            delay: 2500,
+            delay: 2300,
             disableOnInteraction: false,
           }}
           speed={900}

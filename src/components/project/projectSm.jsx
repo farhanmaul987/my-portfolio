@@ -108,7 +108,7 @@ function ProjectSm() {
                 >
                   <button className="flex gap-2 rounded-md border border-white bg-black/90 px-4 py-2 text-white shadow-md transition-all duration-300 hover:border-prLavender hover:text-prLavender">
                     <SiGithub />
-                    View Project
+                    View Projects
                   </button>
                 </a>
               </div>
