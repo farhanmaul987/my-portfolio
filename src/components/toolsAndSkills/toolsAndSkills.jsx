@@ -17,7 +17,7 @@ function ToolsAndSkills() {
         setIconSize(70);
       } else {
         setGradientWidth(50);
-        setIconSize(60);
+        setIconSize(45);
       }
     };
 
@@ -39,7 +39,7 @@ function ToolsAndSkills() {
           <h3 className="heading-4 md:heading-3 text-center">
             My Skills and Tools
           </h3>
-          <h5 className="heading-5 md:heading-5 pt-2 text-center italic text-prGrey">
+          <h5 className="heading-6 md:heading-5 pt-2 text-center italic text-prGrey">
             These are the technologies I used
           </h5>
         </div>
