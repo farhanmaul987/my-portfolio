@@ -1,13 +1,22 @@
-function Detail() {
+export default function UnderConstruction() {
+  const texts = [
+    "STAY TUNED",
+    "UNDER CONSTRUCTION",
+    "COMING SOON",
+    "WORK IN PROGRESS",
+    "ALMOST READY",
+  ];
+
   return (
-    <div className="p-8 text-white">
-      <h1 className="text-3xl font-bold">More About Me</h1>
-      <p className="mt-4 text-lg">
-        Ini adalah halaman detail untuk ngasih info lebih banyak tentang diriku
-        😎.
-      </p>
+    <div className="flex min-h-screen flex-col items-center justify-center gap-24 overflow-hidden md:gap-10 lg:gap-0">
+      {texts.map((text, index) => (
+        <div
+          key={index}
+          className={`transform whitespace-nowrap bg-[#ffd914] px-4 py-0 text-[9vw] font-black uppercase text-black shadow-xl ${index % 2 === 0 ? "-rotate-6" : "rotate-6"} ${index !== 0 ? "-mt-10" : ""}`}
+        >
+          {text}
+        </div>
+      ))}
     </div>
   );
 }
-
-export default Detail;
