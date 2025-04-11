@@ -21,6 +21,10 @@
   display: none;
 } */
 
+body {
+  overflow-x: hidden;
+}
+
 @layer components {
   /* Headings */
   .heading-1 {
