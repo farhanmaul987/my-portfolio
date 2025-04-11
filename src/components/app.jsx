@@ -1,25 +1,32 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./navbar/navbar";
 import Hero from "./hero/hero";
 import AboutMe from "./aboutMe/aboutMe";
 import ToolsAndSkills from "./toolsAndSkills/toolsAndSkills";
 import Project from "./project/project";
-// import HireMe from "./hireMe/hireMe";
 import ContactPerson from "./contactPerson/contactPerson";
-
-// import CustomCursor from "./customCursor.jsx";
+import Detail from "./moreDetail/detail";
 
 function App() {
   return (
-    <div>
-      {/* <CustomCursor /> */}
-      <Navbar />
-      <Hero />
-      <AboutMe />
-      <ToolsAndSkills />
-      <Project />
-      {/* <HireMe /> */}
-      <ContactPerson />
-    </div>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Hero />
+              <AboutMe />
+              <ToolsAndSkills />
+              <Project />
+              <ContactPerson />
+            </>
+          }
+        />
+        <Route path="/more" element={<Detail />} />
+      </Routes>
+    </Router>
   );
 }
 

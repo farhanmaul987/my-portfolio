@@ -1,6 +1,6 @@
 // Flex Left
 import fileFill from "../../assets/file-text-fill.svg";
-
+import { Link } from "react-router-dom";
 // Flex Right
 import myPhoto from "../../assets/my-photo.png";
 import {
@@ -10,12 +10,20 @@ import {
   RiWhatsappLine,
 } from "@remixicon/react";
 
+import { motion } from "framer-motion";
+
 function Hero() {
   return (
-    <section id="hero">
+    <section id="hero" className="overflow-x-hidden">
       <div className="flex flex-col px-6 md:px-12 lg:h-screen lg:flex-row lg:pl-16 lg:pr-0">
         {/* Flex Left */}
-        <div className="w-full lg:w-1/2">
+        <motion.div
+          className="w-full lg:w-1/2"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           <div className="flex w-full flex-col">
             {/* Intro */}
             <div className="h-[35%] pt-24 md:pt-28 lg:pt-32">
@@ -54,18 +62,24 @@ function Hero() {
                   />
                   Download CV
                 </a>
-                <a href="#" className="moreAboutMe">
+                <Link to="/more" className="moreAboutMe">
                   More
-                </a>
+                </Link>
               </div>
             </div>
             {/* End Button */}
           </div>
-        </div>
+        </motion.div>
         {/* End Flex Left */}
 
         {/* Flex Right */}
-        <div className="flex w-full flex-col items-center justify-center lg:w-1/2">
+        <motion.div
+          className="flex w-full flex-col items-center justify-center lg:w-1/2"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           {/* Photo */}
           <div className="pt-14 md:pt-20 lg:pt-20">
             <img
@@ -108,7 +122,8 @@ function Hero() {
               </a>
             ))}
           </div>
-        </div>
+        </motion.div>
+
         {/* End Flex Right */}
       </div>
     </section>

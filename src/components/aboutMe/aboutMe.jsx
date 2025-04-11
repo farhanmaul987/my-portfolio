@@ -1,9 +1,16 @@
+import { motion } from "framer-motion";
 import CustomSlider from "./customSlider";
 
 function AboutMe() {
   return (
     <section id="aboutMe">
-      <div className="px-6 pt-16 md:px-16 lg:pt-24">
+      <motion.div
+        className="px-6 pt-16 md:px-16 lg:pt-24"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
         {/* Text */}
         <h6 className="heading-6 text-center italic text-prGrey">
           What Do I Offer
@@ -19,7 +26,7 @@ function AboutMe() {
           <CustomSlider />
         </div>
         {/* End Slider */}
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -34,7 +34,7 @@ function ToolsAndSkills() {
       {/* End Status */}
 
       {/* Skills and Tools */}
-      <section className="mt-16 px-14">
+      <div className="mt-16 px-14">
         <div className="relative">
           <h3 className="heading-4 md:heading-3 text-center">
             My Skills and Tools
@@ -60,7 +60,7 @@ function ToolsAndSkills() {
             ))}
           </Marquee>
         </div>
-      </section>
+      </div>
       {/* End Skills and Tools */}
     </section>
   );
