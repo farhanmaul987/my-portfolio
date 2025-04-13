@@ -1,6 +1,6 @@
 // Flex Left
 import fileFill from "../../assets/file-text-fill.svg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // Flex Right
 import myPhoto from "../../assets/my-photo.png";
 import {
@@ -62,9 +62,9 @@ function Hero() {
                   />
                   Download CV
                 </a>
-                <Link to="/more" className="moreAboutMe">
+                {/* <Link to="/more" className="moreAboutMe">
                   More
-                </Link>
+                </Link> */}
               </div>
             </div>
             {/* End Button */}
