@@ -4,14 +4,14 @@ import { SiGithub } from "@icons-pack/react-simple-icons";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import { projectList } from "./projectList";
+import { projectData } from "./projectData";
 import imgprj from "../../assets/swipe.jpg";
 
 function ProjectSm() {
   return (
     <div className="relative mt-6 flex justify-center md:hidden">
       <Swiper spaceBetween={7} loop={false} slidesPerView={1}>
-        {projectList.map((project) => (
+        {[...projectData].reverse().map((project) => (
           <SwiperSlide key={project.id}>
             <div className="h-full w-full">
               <div className="relative mx-auto w-[85%] max-w-sm overflow-hidden rounded-xl bg-sldGrey p-5">
