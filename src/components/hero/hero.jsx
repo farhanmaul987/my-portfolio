@@ -2,7 +2,7 @@
 import fileFill from "../../assets/file-text-fill.svg";
 // import { Link } from "react-router-dom";
 // Flex Right
-import myPhoto from "../../assets/my-photo.png";
+import myPhoto from "../../assets/my-photo.webp";
 import {
   RiGithubFill,
   RiInstagramLine,

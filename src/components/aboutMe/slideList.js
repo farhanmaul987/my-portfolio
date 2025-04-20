@@ -1,6 +1,6 @@
-import discordServer from "../../assets/slides/discord.png";
-import webDevelopment from "../../assets/slides/web.png";
-import discordBot from "../../assets/slides/bot1.png";
+import discordServer from "../../assets/slides/discord.webp";
+import webDevelopment from "../../assets/slides/web.webp";
+import discordBot from "../../assets/slides/bot.webp";
 
 export const slides = [
   {

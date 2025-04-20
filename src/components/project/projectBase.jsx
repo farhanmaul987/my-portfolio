@@ -1,5 +1,5 @@
 import { SiGithub } from "@icons-pack/react-simple-icons";
-import { projectList } from "./projectList";
+import { projectData } from "./projectData";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
@@ -44,7 +44,7 @@ function ProjectBase() {
       animate={controls}
       className="hidden grid-cols-2 gap-y-6 md:grid md:justify-center md:px-8 md:pt-20 lg:grid-cols-3 lg:px-14"
     >
-      {projectList.map((project) => (
+      {[...projectData].reverse().map((project) => (
         <motion.div
           variants={itemVariants}
           key={project.id}
