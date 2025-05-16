@@ -3,7 +3,7 @@ import rbFasilkom from "../../assets/projects/ruangbelajarfasilkom.webp";
 import siperuImage from "../../assets/projects/siperu.webp";
 import pettyImage from "../../assets/projects/petty.webp";
 import myportfolio from "../../assets/projects/myportfolio.webp";
-import artopup from "../../assets/projects/artopup.webp";
+import argameshop from "../../assets/projects/argameshop.webp";
 
 import { SiGithub, SiMedium } from "@icons-pack/react-simple-icons";
 import { RiProgress1Line, RiCheckboxCircleFill } from "@remixicon/react";
@@ -176,26 +176,20 @@ export const projectData = [
     detail:
       "This is an online game top-up platform where users can quickly find and purchase in-game currency for their favorite online games. Designed with a clean UI, the site makes the top-up process fast, simple, and secure.",
     titleStyle: "text-[#ff3b3b] heading-4",
-    img: artopup,
-    linkURL: "https://link.farhanmaul.my.id/artopup",
+    img: argameshop,
+    linkURL: "https://link.farhanmaul.my.id/argameshop",
     projectStatus: "ON PROGRESS",
     statusColor: "bg-prLavender",
     statusIcon: RiProgress1Line,
     linkIcon: <SiGithub />,
     badges: [
-      { text: "Nuxt", color: "00DC82", logo: "nuxt", logoColor: "white" },
-      {
-        text: "Vue.js",
-        color: "4FC08D",
-        logo: "vuedotjs",
-        logoColor: "white",
-      },
+      { text: "Next.js", color: "2e2d2b", logo: "nextdotjs", logoColor: "white" },
       { text: "Node.js", color: "339933", logo: "node.js", logoColor: "white" },
       {
-        text: "MySQL",
-        color: "4479A1",
-        logo: "mysql",
-        logoColor: "white",
+        text: "MongoDB",
+        color: "2e2d2b",
+        logo: "mongodb",
+        logoColor: "green",
       },
     ],
   },
