@@ -1,4 +1,5 @@
 import { SiGithub } from "@icons-pack/react-simple-icons";
+import { RiGlobalLine } from "@remixicon/react";
 import { projectData } from "./projectData";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -91,19 +92,35 @@ function ProjectBase() {
                 />
               ))}
             </div>
-            <div className="left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-2 transition-all duration-300 lg:absolute lg:flex lg:opacity-0 lg:group-hover:scale-110 lg:group-hover:opacity-100">
-              <a
-                href={project.linkURL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className="flex gap-2 rounded-md border border-white bg-black/90 px-4 py-2 text-white shadow-md transition-all duration-300 hover:border-prLavender hover:text-prLavender">
+            <div className="left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-2 transition-all duration-300 lg:absolute lg:flex lg:opacity-0 lg:group-hover:scale-110 lg:group-hover:opacity-100">
+              <div className="flex w-44 flex-col gap-2">
+                {/* Tombol ke Website */}
+                {project.linkWeb && (
+                  <a
+                    href={project.linkWeb}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex w-full items-center justify-center gap-2 rounded-md border border-white bg-black/90 py-2 text-white shadow-md transition-all duration-300 hover:border-prLavender hover:text-prLavender"
+                  >
+                    <RiGlobalLine />
+                    View Website
+                  </a>
+                )}
+
+                {/* Tombol ke GitHub / Repo */}
+                <a
+                  href={project.linkURL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex w-full items-center justify-center gap-2 rounded-md border border-white bg-black/90 py-2 text-white shadow-md transition-all duration-300 hover:border-prLavender hover:text-prLavender"
+                >
                   {project.linkIcon}
                   View Project
-                </button>
-              </a>
+                </a>
+              </div>
             </div>
-            <div className="pt-[21px] lg:hidden">
+
+            {/* <div className="pt-[21px] lg:hidden">
               <a
                 href={project.linkURL}
                 target="_blank"
@@ -113,7 +130,7 @@ function ProjectBase() {
                   {project.linkIcon}
                 </button>
               </a>
-            </div>
+            </div> */}
           </div>
         </motion.div>
       ))}

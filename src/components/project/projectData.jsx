@@ -34,6 +34,7 @@ export const projectData = [
     statusColor: "bg-green-600",
     statusIcon: RiCheckboxCircleFill,
     linkIcon: <SiMedium />,
+    linkWeb: "",
     badges: [
       {
         text: "Figma",
@@ -64,6 +65,7 @@ export const projectData = [
     statusColor: "bg-green-600",
     statusIcon: RiCheckboxCircleFill,
     linkIcon: <SiGithub />,
+    linkWeb: "",
     badges: [
       {
         text: "CodeIgniter 3",
@@ -99,6 +101,7 @@ export const projectData = [
     statusColor: "bg-green-600",
     statusIcon: RiCheckboxCircleFill,
     linkIcon: <SiGithub />,
+    linkWeb: "",
     badges: [
       { text: "PHP", color: "777BB4", logo: "php", logoColor: "white" },
       {
@@ -135,6 +138,7 @@ export const projectData = [
     statusColor: "bg-green-600",
     statusIcon: RiCheckboxCircleFill,
     linkIcon: <SiGithub />,
+    linkWeb: "",
     badges: [
       {
         text: "Discord.js",
@@ -158,6 +162,7 @@ export const projectData = [
     statusColor: "bg-green-600",
     statusIcon: RiCheckboxCircleFill,
     linkIcon: <SiGithub />,
+    linkWeb: "",
     badges: [
       { text: "React Js", color: "61DAFB", logo: "react", logoColor: "white" },
       {
@@ -182,8 +187,14 @@ export const projectData = [
     statusColor: "bg-prLavender",
     statusIcon: RiProgress1Line,
     linkIcon: <SiGithub />,
+    linkWeb: "https://argameshop.vercel.app/",
     badges: [
-      { text: "Next.js", color: "2e2d2b", logo: "nextdotjs", logoColor: "white" },
+      {
+        text: "Next.js",
+        color: "2e2d2b",
+        logo: "nextdotjs",
+        logoColor: "white",
+      },
       { text: "Node.js", color: "339933", logo: "node.js", logoColor: "white" },
       {
         text: "MongoDB",
