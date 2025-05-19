@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SiGithub } from "@icons-pack/react-simple-icons";
+import { RiGlobalLine } from "@remixicon/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -75,15 +76,26 @@ function ProjectSm() {
 
                 {/* Button Link */}
                 <div className="relative left-1 flex pt-[21px]">
-                  <a
-                    href={project.linkURL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="rounded-full border border-white p-2 transition-all duration-300 hover:border-prLavender hover:text-prLavender">
+                  <div className="flex gap-x-4">
+                    {project.linkWeb && (
+                      <a
+                        href={project.linkWeb}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="rounded-full border border-white p-2 transition-all duration-300 hover:border-prLavender hover:text-prLavender"
+                      >
+                        <RiGlobalLine />
+                      </a>
+                    )}
+                    <a
+                      href={project.linkURL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-full border border-white p-2 transition-all duration-300 hover:border-prLavender hover:text-prLavender"
+                    >
                       {project.linkIcon}
-                    </button>
-                  </a>
+                    </a>
+                  </div>
                   <img
                     src={imgprj}
                     alt="imgprj"
