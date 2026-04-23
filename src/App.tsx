@@ -1,25 +1,22 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "@/components/sections/Navbar";
-import Hero from "@/components/sections/Hero";
-import About from "@/components/sections/About";
-import TechStack from "@/components/sections/TechStack";
-import Projects from "@/components/sections/Projects";
-import WhatIDo from "@/components/sections/WhatIDo";
-import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
+import HomePage from "@/components/pages/HomePage";
+import TimelinePage from "@/components/pages/TimelinePage";
+import BlogPage from "@/components/pages/BlogPage";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-bg text-text">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <TechStack />
-        <Projects />
-        <WhatIDo />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="min-h-screen bg-bg text-text">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/timeline" element={<TimelinePage />} />
+          <Route path="/blog" element={<BlogPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
