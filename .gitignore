@@ -22,3 +22,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Claude Code & Playwright artifacts
+.claude/
+.playwright-mcp/
+
+# Root-level screenshots (debug artifacts)
+/about-section.png
+/fullpage.png
+/hero-final.png
+/hero-section.png
+/projects-section.png
+/stack-section.png
