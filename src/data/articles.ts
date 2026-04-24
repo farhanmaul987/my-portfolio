@@ -89,24 +89,24 @@ export const platformMeta: Record<
 // ──────────────────────────────────────────────
 export const articles: Article[] = [
   // Contoh: uncomment dan isi datamu
-  // {
-  //   id: 1,
-  //   title: "Judul artikel kamu",
-  //   summary: "Deskripsi singkat 1-2 kalimat tentang isi artikel.",
-  //   date: "2024-01-01",
-  //   platform: "medium",
-  //   url: "https://medium.com/@username/judul-artikel",
-  //   tags: ["Laravel", "Backend", "Tips"],
-  //   featured: true,
-  // },
-  // {
-  //   id: 2,
-  //   title: "Case Study: Redesign UI/UX Waste4Change",
-  //   summary: "Proses redesign mobile app Waste4Change dari riset user sampai high-fidelity prototype.",
-  //   date: "2022-12-01",
-  //   platform: "behance",
-  //   url: "https://link.farhanmaul.my.id/w4c",
-  //   tags: ["UI/UX", "Figma", "Case Study"],
-  //   featured: false,
-  // },
+  {
+    id: 1,
+    title: "Case Study: Redesign UI/UX Waste4Change",
+    summary: "Proses redesign mobile app Waste4Change dari riset user sampai high-fidelity prototype.",
+    date: "2022",
+    platform: "medium",
+    url: "https://link.farhanmaul.my.id/w4c",
+    tags: ["UI/UX", "Figma", "Case Study"],
+    featured: false,
+  },
+  {
+    id: 2,
+    title: "Judul artikel kamu",
+    summary: "Deskripsi singkat 1-2 kalimat tentang isi artikel.",
+    date: "2024-01-01",
+    platform: "medium",
+    url: "https://medium.com/@username/judul-artikel",
+    tags: ["Laravel", "Backend", "Tips"],
+    featured: false,
+  },
 ];

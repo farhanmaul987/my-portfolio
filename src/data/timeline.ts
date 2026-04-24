@@ -72,50 +72,50 @@ export const categoryMeta: Record<
 export const timelineEvents: TimelineEvent[] = [
   {
     id: 1,
-    year: "2019",        // ← Ganti sesuai tahun masuk SMA/SMK
-    title: "Masuk SMA / SMK",
-    place: "Nama Sekolah",  // ← Isi nama sekolahnya
+    year: "2014 - 2020",        // ← Ganti sesuai tahun masuk SMA/SMK
+    title: "SMP - SMK",
     description:
-      "Awal perjalanan. Di sini mulai kenal dunia teknologi dan komputer untuk pertama kalinya.",
+      "Awal perjalanan. Di sini mulai banyak belajar IT.",
     category: "education",
     tags: ["High School"],
   },
   {
     id: 2,
-    year: "2020",        // ← Sesuaikan
-    title: "Mulai Belajar Programming",
-    description:
-      "Pertama kali berkenalan dengan HTML, CSS, dan sedikit JavaScript. Dari sini mulai ketagihan.",
-    category: "project",
-    tags: ["HTML", "CSS", "JavaScript"],
-  },
-  {
-    id: 3,
     year: "2020",        // ← Sesuaikan tahun masuk kuliah
-    title: "Masuk S1 Teknik Informatika",
+    title: "Masuk S1 Informatika",
     place: 'Universitas Pembangunan Nasional "Veteran" Jawa Timur',
     description:
-      "Diterima di program studi Informatika. Dari sini petualangan beneran dimulai — belajar algoritma, struktur data, dan mulai serius di programming.",
+      "Diterima di program studi Informatika. Dari sini mulai belajar algoritma, struktur data, dan mulai serius di programming.",
     category: "education",
     tags: ["Informatika", "UPN Veteran Jawa Timur"],
   },
   {
-    id: 4,
-    year: "2021",        // ← Sesuaikan
-    title: "Ikut Organisasi / UKM",
-    place: "Nama Organisasi",  // ← Isi nama organisasinya
+    id: 3,
+    year: "2021 - 2022",        // ← Sesuaikan
+    title: "Ikut Organisasi",
+    place: "Ikatan Mahaiswa Jombang UPN Veteran Jawa Timur",  // ← Isi nama organisasinya
     description:
-      "Bergabung dengan organisasi di kampus. Belajar kerja tim, kepemimpinan, dan manajemen waktu di luar kelas.",
+      "Belajar kerja tim, kepemimpinan, dan manajemen waktu di luar kelas. Menjadi bagian dari Divisi KOMINFO",
     category: "organization",
-    tags: ["Leadership", "Teamwork"],
+    tags: ["Teamwork", "IMAJIPENA"],
+  },
+  {
+    id: 4,
+    year: "2022 - 2023",
+    title: "Ikut Organisasi Internal Kampus",
+    place: "BLM Fasilkom",
+    description:
+      "Menjadi bagian dari komisi 1 yang bertugas mengawasi Divisi PSDM BEM Fasilkom dan menjadi narahubung pihak luar dengan BLM Fasilkom.",
+    category: "organization",
+    tags: ["Leadership", "BLM Fasilkom"],
   },
   {
     id: 5,
     year: "2022",
-    title: "Kampus Merdeka – UI/UX Design",
-    place: "Skilvul Tech4Impact (Batch 3)",
+    title: "Kampus Merdeka – UI/UX Design Mastery",
+    place: "Skilvul Tech4Impact (Kampus Merdeka Batch 3)",
     description:
-      "Mengikuti program Kampus Merdeka di Skilvul dengan fokus UI/UX Design Mastery. Case study: redesign mobile app Waste4Change.",
+      "Mengikuti program Kampus Merdeka di Skilvul dengan fokus UI/UX Design Mastery. Case study: Redesign mobile app Waste4Change.",
     category: "achievement",
     tags: ["Figma", "UI/UX Design", "Kampus Merdeka"],
     link: "https://link.farhanmaul.my.id/w4c",
@@ -123,11 +123,10 @@ export const timelineEvents: TimelineEvent[] = [
   {
     id: 6,
     year: "2023",
-    month: "Jan",
     title: "Internship – Web Developer",
     place: "BPK Perwakilan Provinsi Jawa Timur",
     description:
-      "Magang sebagai web developer dan membangun SIPERU — sistem booking ruang rapat berbasis web yang menggantikan proses manual di lingkungan BPK.",
+    "Magang sebagai web developer dan membangun SIPERU — Sistem Booking Ruang Rapat berbasis web yang menggantikan proses manual di lingkungan BPK.",
     category: "work",
     tags: ["PHP", "JavaScript", "MySQL", "Web Development"],
     link: "https://link.farhanmaul.my.id/siperu",
@@ -135,7 +134,16 @@ export const timelineEvents: TimelineEvent[] = [
   {
     id: 7,
     year: "2023",
-    month: "Sep",
+    title: "Pelatihan Junior Web Developer",
+    place: "Lembaga Sertifikasi Profesi Teknologi Digital",
+    description:
+      "Mengikuti program Junior Web Developer bersertifikat dari LSP.",
+    category: "achievement",
+    tags: ["HTML", "CSS", "JavaScript", "LSP", "Junior Web Developer"],
+  },
+  {
+    id: 8,
+    year: "2024",
     title: "Skripsi – Manhwa Recommendation Bot",
     description:
       "Mengerjakan tugas akhir: membangun Discord Bot (Petty) yang memberikan rekomendasi manhwa menggunakan dataset 2.800+ judul dengan content-based filtering.",
@@ -144,9 +152,9 @@ export const timelineEvents: TimelineEvent[] = [
     link: "https://link.farhanmaul.my.id/petty",
   },
   {
-    id: 8,
-    year: "2024",        // ← Sesuaikan tahun lulus
-    title: "Lulus S1 Teknik Informatika",
+    id: 9,
+    year: "Jan 2025",        // ← Sesuaikan tahun lulus
+    title: "Lulus S1 Informatika",
     place: 'Universitas Pembangunan Nasional "Veteran" Jawa Timur',
     description:
       "Menyelesaikan studi Sarjana Informatika. Empat tahun penuh belajar, coding, organisasi, dan membangun berbagai project.",
@@ -154,13 +162,12 @@ export const timelineEvents: TimelineEvent[] = [
     tags: ["Bachelor Degree", "Informatika"],
   },
   {
-    id: 9,
-    year: "2024",        // ← Sesuaikan tahun mulai kerja
+    id: 10,
+    year: "2025",        // ← Sesuaikan tahun mulai kerja
     title: "IT Developer – Manufacturing Industry",
-    place: "Nama Perusahaan",  // ← Isi nama perusahaannya (opsional kalau private)
     description:
-      "Mulai bekerja sebagai IT Developer di perusahaan manufaktur. Mengelola sistem internal yang digunakan dalam operasional bisnis sehari-hari — dari API backend sampai interface user.",
+      "Mulai bekerja sebagai IT Developer di perusahaan manufaktur. Mengelola berbagai sistem internal yang digunakan dalam operasional bisnis sehari-hari — dari API backend sampai interface user.",
     category: "work",
-    tags: ["Laravel", "React", "PostgreSQL", "Redis"],
+    tags: ["Laravel", "React", "PostgreSQL", "Wordpress", "Redis"],
   },
 ];
