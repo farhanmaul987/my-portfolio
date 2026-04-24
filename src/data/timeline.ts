@@ -163,7 +163,7 @@ export const timelineEvents: TimelineEvent[] = [
   },
   {
     id: 10,
-    year: "2025",        // ← Sesuaikan tahun mulai kerja
+    year: "2025 - Now",        // ← Sesuaikan tahun mulai kerja
     title: "IT Developer – Manufacturing Industry",
     description:
       "Mulai bekerja sebagai IT Developer di perusahaan manufaktur. Mengelola berbagai sistem internal yang digunakan dalam operasional bisnis sehari-hari — dari API backend sampai interface user.",
